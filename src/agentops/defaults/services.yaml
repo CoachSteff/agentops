@@ -1,0 +1,24 @@
+# AgentOps — local agent services
+# Edit this file to add your own services. Restart AgentOps to apply.
+
+version: 1
+
+window:
+  width: 1400
+  height: 900
+  min_width: 900
+  min_height: 600
+  remember_size: true
+
+services:
+  - id: mission-control
+    name: Mission Control
+    url: http://localhost:9753
+    icon: mission-control.svg
+    default: true
+
+  # Example: uncomment and adapt for your own service.
+  # - id: my-tool
+  #   name: My Tool
+  #   url: http://localhost:3000
+  #   icon: default.svg

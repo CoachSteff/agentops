@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentOps</title>
+<link rel="stylesheet" href="shell.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar" aria-label="Services"></aside>
+<main class="main">
+  <iframe id="service-view" class="service-view"
+          allow="clipboard-read; clipboard-write; microphone; camera; geolocation"
+          referrerpolicy="no-referrer"></iframe>
+  <div id="empty-state" class="empty-state" hidden>
+    <h1>No service selected</h1>
+    <p>Add services to <code>~/.agentops/services.yaml</code> and relaunch.</p>
+  </div>
+  <div id="frame-error" class="frame-error" hidden>
+    <h1>Can't embed this service</h1>
+    <p>This service refuses to be loaded in a frame.</p>
+    <button id="open-in-browser">Open in Browser</button>
+  </div>
+</main>
+<script src="shell.js"></script>
+</body>
+</html>
