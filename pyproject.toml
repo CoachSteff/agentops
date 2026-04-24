@@ -1,6 +1,6 @@
 [project]
 name = "agentops"
-version = "0.1.0"
+version = "0.1.1"
 description = "AgentOps — lightweight companion browser for local agent services"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -25,6 +25,7 @@ dependencies = [
 
 [project.optional-dependencies]
 build = ["pyinstaller>=6.0"]
+dev = ["pytest>=8.0"]
 
 [project.scripts]
 agentops = "agentops.cli:app"
